@@ -1,0 +1,13 @@
+body{
+    margin:0;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://scontent.subi.vn/cmsmedia/hinh-nen-cho-may-tinh-dep-nhat-khong-the-bo-qua-nam-2021-3-6b87fef23275a854e04982de64a72fb7.jpg);
+    /* background-color: black; */
+    background-size: cover;
+    
+
+}

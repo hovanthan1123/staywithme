@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Staywithme</title>
+        <meta charset="utf-f8">
+        <meta name="viewport" content="width=device-width, initial=scale=1.0">
+        <!-- <link ref="stylesheet" href="main.css"> -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
+            body{
+               margin:0;
+            }
+            #container{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                background-image: url(https://scontent.subi.vn/cmsmedia/hinh-nen-cho-may-tinh-dep-nhat-khong-the-bo-qua-nam-2021-3-6b87fef23275a854e04982de64a72fb7.jpg);
+                /* background-color: black; */
+                background-size: cover;
+                background-position: center;
+                overflow: hidden;
+                display: flex;
+                justify-content:center ;
+                align-items: center;
+
+            }
+            .text {
+                color: #fff;
+                margin:0;
+                font-size: xxx-large;
+                letter-spacing: 4px;
+                white-space: nowrap;
+                font-family: 'Snowburst One', cursive;
+                overflow: hidden;
+                border-right: 5px solid #fff;
+                animation: typing 5s linear infinite,caret 0.5s steps(2) infinite;
+            }
+            @keyframes caret{
+                from{
+                    border-color: transparent;
+                }
+                to{
+                    border-color: #fff;
+                }
+            }
+            @keyframes typing{
+                from{
+                    width: 0;
+                }
+                to{
+                    width: 100%;
+                }
+            }
+            .snow{
+                position: absolute;
+                top:0;
+                left: 0;
+                width:10px;
+                height: 10px;
+                /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSonloaYND1QH9hnLkWGL-ELNHBys9hWengrg&usqp=CAU); */
+                /* background-size: cover; */
+                background: #fff;
+                border-radius: 50%;
+                animation: animationSnow 4s ease-in-out infinite;
+                
+            }
+            @keyframes animationSnow{
+                0%{
+                    transform: translate(0,0);
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                    transform: translate(100px,100vh);
+                }
+            }
+            @media only screen and (max-width: 46.1875em){
+                .text{
+                    font-size:medium;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+       <div id="container">
+            <div class="ij">
+                <h1 class = "text" >Merry Christmas Phuong Mai </h1>
+            </div>
+            <div class="snow"></div>
+       </div>
+        <script src="script.js"></script>
+    </body>
+</html>
